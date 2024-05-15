@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.MainContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    flex-direction: row;
+    width: 570px;
+    height: 440px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+}
+@media screen and (max-width: 1440px){
+    .MainContainer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .MainContainer {
+        width: 50%;
+        
+    }
+}
+
+/* IMAGE SECTION */
+
+.imgSection #product {
+    height: 440px;
+    width: 290px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
+
+/* TEXT SECTION */
+
+.txtSection {
+    margin-left: 40px;
+    margin-right: auto;
+    width: 13em;
+}
+
+.txtSection #perfume-txt {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: small;
+    letter-spacing: .3rem;
+    color: hsl(228, 12%, 48%);
+    padding-top: 15px;
+}
+
+.txtSection #gabrielle-txt {
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: xx-large;
+    color: hsl(212, 21%, 14%);
+    line-height: 30px;
+}
+
+.txtSection #description {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: small;
+    color: hsl(228, 12%, 48%);
+    line-height: 20px;
+}
+
+.txtSection .price-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.txtSection .price-box #big-price {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+    font-size: 1.8em;
+    color: hsl(158, 36%, 37%);
+}
+
+.txtSection .price-box #crossed-price {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-decoration: line-through;
+    font-size: small;
+    color: hsl(228, 12%, 48%);  
+}
+
+.txtSection #cart-button {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border-color: transparent;
+    width: 100%;
+    height: 45px;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
