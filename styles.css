@@ -19,18 +19,6 @@ section {
     background-color: hsl(0, 0%, 100%);
     margin: auto;
 }
-@media screen and (max-width: 1440px){
-    .MainContainer {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .MainContainer {
-        width: 50%;
-        
-    }
-}
 
 /* IMAGE SECTION */
 
@@ -113,4 +101,44 @@ section {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+@media screen and (max-width: 667px) {
+    .MainContainer {
+        flex-direction: column;
+        justify-content: left;
+        max-width: 350px;
+        height: 630px;
+    }
+    .imgSection #product {
+        border-top-right-radius: 10px 10px;
+        border-bottom-left-radius: 0px 0px;
+        object-fit: cover;
+        width: 350px; 
+        height: 270px;
+    }
+    .txtSection {
+        margin-left: 25px;
+        width: 20em;
+    }
+    .txtSection #perfume-txt {
+        padding-top: 10px;
+        line-height: 10px;
+    }
+    .txtSection #gabrielle-txt {
+        line-height: 30px;
+    }
+    .txtSection #description {
+        padding-top: -10px;
+        margin-right: 65px;
+    }
+    .txtSection .price-box {
+        height: 50px;
+    }
+    .txtSection #cart-button {
+        width: 300px;
+    }
+    .attribution {
+        margin-top: 50px;
+    }
 }
